@@ -12,6 +12,38 @@
     ext: 'png'
   }).addTo(map);
 
+  /*
+
+  # Lab 2
+
+  ## Introduction
+
+  ### Part 1
+  You've already seen this file organized and refactored. In this lab, you will
+  try to refactor this code to be cleaner and clearer - you should use the
+  utilities and functions provided by underscore.js. Eliminate loops where
+  possible and try to reduce the number of lines of code as much as poassible.
+
+
+  ### Part 2
+  Now that you've refactored, let's add some functionality. Write a function
+  that takes a phone number or a school number (look at /data/phillySchools.csv)
+  and returns the school to which it belongs. This single function should take EITHER
+  phone number OR school number.
+
+  It will look something like:
+  function('123-1234') { return aSchool; } or
+  function(1234) { return aSchool; }
+
+
+  ### Part 3
+  Try your hand at using _.reduce to produce a sum of all students enrolled at the
+  schools you filter for. This is tricky, so feel free to solve this with a neighbor.
+
+  */
+
+
+
   // Mock user input
   // Filter out according to these zip codes:
   var acceptedZipcodes = [19106, 19107, 19124, 19111, 19118];
