@@ -63,12 +63,12 @@
 
     // Check out the use of typeof here — this was not a contrived example.
     // Someone actually messed up the data entry
-    if (typeof schools[i].GRADE_ORG === 'number') {
+    if (typeof schools[i].GRADE_ORG === 'number') {  // if number
       schools[i].HAS_KINDERGARTEN = schools[i].GRADE_LEVEL < 1;
       schools[i].HAS_ELEMENTARY = 1 < schools[i].GRADE_LEVEL < 6;
       schools[i].HAS_MIDDLE_SCHOOL = 5 < schools[i].GRADE_LEVEL < 9
       schools[i].HAS_HIGH_SCHOOL = 8 < schools[i].GRADE_LEVEL < 13
-    } else {
+    } else {  // otherwise (in case of string)
       schools[i].HAS_KINDERGARTEN = schools[i].GRADE_LEVEL.toUpperCase().indexOf('K') >= 0;
       schools[i].HAS_ELEMENTARY = schools[i].GRADE_LEVEL.toUpperCase().indexOf('ELEM') >= 0;
       schools[i].HAS_MIDDLE_SCHOOL = schools[i].GRADE_LEVEL.toUpperCase().indexOf('MID') >= 0;

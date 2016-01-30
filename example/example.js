@@ -34,8 +34,8 @@
     if (typeof schools[i].GRADE_ORG === 'number') {
       schools[i].HAS_KINDERGARTEN = schools[i].GRADE_LEVEL < 1;
       schools[i].HAS_ELEMENTARY = 1 < schools[i].GRADE_LEVEL < 6;
-      schools[i].HAS_MIDDLE_SCHOOL = 5 < schools[i].GRADE_LEVEL < 9
-      schools[i].HAS_HIGH_SCHOOL = 8 < schools[i].GRADE_LEVEL < 13
+      schools[i].HAS_MIDDLE_SCHOOL = 5 < schools[i].GRADE_LEVEL < 9;
+      schools[i].HAS_HIGH_SCHOOL = 8 < schools[i].GRADE_LEVEL < 13;
     } else {
       schools[i].HAS_KINDERGARTEN = schools[i].GRADE_LEVEL.toUpperCase().indexOf('K') >= 0;
       schools[i].HAS_ELEMENTARY = schools[i].GRADE_LEVEL.toUpperCase().indexOf('ELEM') >= 0;
@@ -50,7 +50,7 @@
   for (var i = 0; i < schools.length - 1; i++) {
     isOpen = schools[i].ACTIVE.toUpperCase() == 'OPEN';
     isPublic = (schools[i].TYPE.toUpperCase() !== 'CHARTER' ||
-                schools[i].TYPE.toUpperCase() !== 'PRIVATE')
+                schools[i].TYPE.toUpperCase() !== 'PRIVATE');
     isSchool = (schools[i].HAS_KINDERGARTEN ||
                 schools[i].HAS_ELEMENTARY ||
                 schools[i].HAS_MIDDLE_SCHOOL ||
@@ -76,7 +76,7 @@
   for (var i = 0; i < filtered_data.length - 1; i++) {
     isOpen = filtered_data[i].ACTIVE.toUpperCase() == 'OPEN';
     isPublic = (filtered_data[i].TYPE.toUpperCase() !== 'CHARTER' ||
-                filtered_data[i].TYPE.toUpperCase() !== 'PRIVATE')
+                filtered_data[i].TYPE.toUpperCase() !== 'PRIVATE');
     meetsMinimumEnrollment = filtered_data[i].ENROLLMENT > minEnrollment;
 
     // Constructing the styling  options for our map
