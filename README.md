@@ -20,7 +20,7 @@
 - Selecting elements
 - Array utilities
 - `each`: No more `for` loops!<sup>*</sup>
-- Lab 1
+- [Lab 1](lab/lab1/)
 
 <sup>*</sup>Mostly!
 
@@ -30,7 +30,7 @@
 - `map` vs `each`: purity and side-effects redux
 - `max` and `min`: collection aggregation
 - `reduce`: roll your own aggregations
-- Lab 2
+- [Lab 2](lab/lab2/)
 
 ## HTML & CSS Introduction
 
