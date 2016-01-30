@@ -32,7 +32,7 @@
 - `reduce`: roll your own aggregations
 - Lab 2
 
-### HTML & CSS Introduction
+## HTML & CSS Introduction
 
 #### HTML & CSS
 - Review our uses thus Far
