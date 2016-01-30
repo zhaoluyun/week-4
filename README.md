@@ -6,4 +6,12 @@
 
 ### Underscore
 
-## 
+## Assignment
+
+#### Code Academy
+
+* Complete the [HTML & CSS coursework](https://www.codecademy.com/learn/web)
+
+#### Project
+
+Complete the assignment.
