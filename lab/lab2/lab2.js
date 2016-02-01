@@ -21,7 +21,7 @@
   You've already seen this file organized and refactored. In this lab, you will
   try to refactor this code to be cleaner and clearer - you should use the
   utilities and functions provided by underscore.js. Eliminate loops where
-  possible and try to reduce the number of lines of code as much as poassible.
+  possible and try to reduce the number of lines of code as much as possible.
 
   ### Part 2
   Now that you've refactored, let's add some functionality. Write a function
