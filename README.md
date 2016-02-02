@@ -16,9 +16,23 @@
 - Make code DRYer ('don't repeat yourself')
     - Redundant code is a headache waiting to happen
 
+### Functions continued
+
+##### Section 1: Using functions
+- Writing functions
+    - Naming functions
+    - Providing arguments
+    - The function body
+    - The `return` statement
+    - Function values
+- Thinking functionally
+    - Everything in a program is data
+    - Functions are data transformations
+
+
 ### underscore.js
 
-##### Section 1: [Library](http://underscorejs.org/) overview
+##### Section 2: [Library](http://underscorejs.org/) overview
 - Selecting elements
 - Array utilities
 - `each`: No more `for` loops!<sup>*</sup>
@@ -26,13 +40,6 @@
 
 <sup>*</sup>Mostly!
 
-
-##### Section 2: Advanced underscore and higher order functions
-- `groupBy` and `countBy`: special cases of `each`
-- `map` vs `each`: purity and side-effects redux
-- `max` and `min`: collection aggregation
-- `reduce`: roll your own aggregations
-- [Lab 2](lab/lab2/)
 
 ### HTML & CSS Introduction
 

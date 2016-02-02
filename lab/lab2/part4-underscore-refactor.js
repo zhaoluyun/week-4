@@ -12,32 +12,15 @@
     ext: 'png'
   }).addTo(map);
 
-  /* =====================
-  # Lab 2
+  # Lab 1, Part 4 — (Optional, stretch goal)
 
   ## Introduction
 
-  ### Part 1
-  You've already seen this file organized and refactored. In this lab, you will
-  try to refactor this code to be cleaner and clearer - you should use the
-  utilities and functions provided by underscore.js. Eliminate loops where
-  possible and try to reduce the number of lines of code as much as possible.
-
-  ### Part 2
-  Now that you've refactored, let's add some functionality. Write a function
-  that takes a phone number or a school number (look at /data/phillySchools.csv)
-  and returns the school to which it belongs. This single function should take EITHER
-  phone number OR school number.
-
-  It will look something like:
-  function('123-1234') { return aSchool; } or
-  function(1234) { return aSchool; }
-
-  ### Part 3
-  Try your hand at using _.reduce to produce a sum of all students enrolled at the
-  schools you filter for. This is tricky, so feel free to solve this with a neighbor.
-
-  ===================== */
+  /*
+    You've already seen this file organized and refactored. In this lab, you will
+    try to refactor this code to be cleaner and clearer - you should use the
+    utilities and functions provided by underscore.js. Eliminate loops where
+  */
 
   // Mock user input
   // Filter out according to these zip codes:
@@ -61,8 +44,8 @@
     if (typeof schools[i].GRADE_ORG === 'number') {  // if number
       schools[i].HAS_KINDERGARTEN = schools[i].GRADE_LEVEL < 1;
       schools[i].HAS_ELEMENTARY = 1 < schools[i].GRADE_LEVEL < 6;
-      schools[i].HAS_MIDDLE_SCHOOL = 5 < schools[i].GRADE_LEVEL < 9
-      schools[i].HAS_HIGH_SCHOOL = 8 < schools[i].GRADE_LEVEL < 13
+      schools[i].HAS_MIDDLE_SCHOOL = 5 < schools[i].GRADE_LEVEL < 9;
+      schools[i].HAS_HIGH_SCHOOL = 8 < schools[i].GRADE_LEVEL < 13;
     } else {  // otherwise (in case of string)
       schools[i].HAS_KINDERGARTEN = schools[i].GRADE_LEVEL.toUpperCase().indexOf('K') >= 0;
       schools[i].HAS_ELEMENTARY = schools[i].GRADE_LEVEL.toUpperCase().indexOf('ELEM') >= 0;
@@ -77,7 +60,7 @@
   for (var i = 0; i < schools.length - 1; i++) {
     isOpen = schools[i].ACTIVE.toUpperCase() == 'OPEN';
     isPublic = (schools[i].TYPE.toUpperCase() !== 'CHARTER' ||
-                schools[i].TYPE.toUpperCase() !== 'PRIVATE')
+                schools[i].TYPE.toUpperCase() !== 'PRIVATE');
     isSchool = (schools[i].HAS_KINDERGARTEN ||
                 schools[i].HAS_ELEMENTARY ||
                 schools[i].HAS_MIDDLE_SCHOOL ||
@@ -103,7 +86,7 @@
   for (var i = 0; i < filtered_data.length - 1; i++) {
     isOpen = filtered_data[i].ACTIVE.toUpperCase() == 'OPEN';
     isPublic = (filtered_data[i].TYPE.toUpperCase() !== 'CHARTER' ||
-                filtered_data[i].TYPE.toUpperCase() !== 'PRIVATE')
+                filtered_data[i].TYPE.toUpperCase() !== 'PRIVATE');
     meetsMinimumEnrollment = filtered_data[i].ENROLLMENT > minEnrollment;
 
     // Constructing the styling  options for our map
