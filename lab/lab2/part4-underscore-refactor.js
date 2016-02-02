@@ -12,15 +12,17 @@
     ext: 'png'
   }).addTo(map);
 
+  /* =====================
+
   # Lab 2, Part 4 — (Optional, stretch goal)
 
   ## Introduction
 
-  /*
     You've already seen this file organized and refactored. In this lab, you will
     try to refactor this code to be cleaner and clearer - you should use the
-    utilities and functions provided by underscore.js. Eliminate loops where
-  */
+    utilities and functions provided by underscore.js. Eliminate loops where possible.
+
+  ===================== */
 
   // Mock user input
   // Filter out according to these zip codes:
