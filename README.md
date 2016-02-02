@@ -21,6 +21,9 @@
 - Thinking functionally
     - Everything in a program is data
     - Functions are data transformations
+- [Lab 1](lab/lab1/)
+
+
 
 ### Live coding: refactoring code into functions
 - Step through the code and discuss
@@ -36,7 +39,7 @@
 - Selecting elements
 - Array utilities
 - `each`: No more `for` loops!<sup>*</sup>
-- [Lab 1](lab/lab1/)
+- [Lab 2](lab/lab2/)
 
 <sup>*</sup>Mostly!
 
