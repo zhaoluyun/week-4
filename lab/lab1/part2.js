@@ -64,7 +64,7 @@ var filterOutLessThan10 = function() {
 
 };
 
-console.log('filterOutLessThan10 success:', filterOutLessThan10([4, 11]) === [11]);
+console.log('filterOutLessThan10 success:', filterOutLessThan10([4, 11]).length === 1);
 
 /* =====================
 Stretch goal — NOT required
@@ -77,4 +77,4 @@ var filter = function(array, func) {
 
 };
 
-console.log('filter success:', filter([4, 11], isOdd) === [11]);
+console.log('filter success:', filter([4, 11], isOdd).length === 1);
