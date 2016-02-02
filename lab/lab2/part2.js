@@ -1,5 +1,5 @@
 /* =====================
-# Lab 1, Part 2 — Underscore Each Function
+# Lab 2, Part 2 — Underscore Each Function
 
 ## Introduction
 

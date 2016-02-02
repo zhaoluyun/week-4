@@ -1,5 +1,5 @@
 /* =====================
-# Lab 1, Part 1 — Underscore Selection
+# Lab 2, Part 1 — Underscore Selection
 
 ## Introduction
 
