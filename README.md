@@ -54,5 +54,5 @@
 
 ## Homework Assignment (Due: Sunday, February 7)
 - Complete [Code Academy HTML/CSS](https://www.codecademy.com/learn/web)
-- Complete [Week 3 Labs](lab)
+- Complete [Week 3 Labs](lab) (Lab 2, Part 4 is an Optional Challenge)
 - Complete [Week 3 Assignment](assignment)
