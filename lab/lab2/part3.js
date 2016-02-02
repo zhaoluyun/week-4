@@ -1,5 +1,5 @@
 /* =====================
-# Lab 1, Part 3 — Underscore Analyze
+# Lab 2, Part 3 — Underscore Analyze
 
 ## Introduction
 

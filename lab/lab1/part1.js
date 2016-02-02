@@ -1,79 +1,33 @@
-/* =====================
-# Lab 1, Part 1 — Underscore Selection
+//    instructions: "Write a function that adds one to the number provided"
+//    example: "plusOne(2) should return 3"
+var plusOne = function() {};
+console.log('plusOne success:', plusOne(99) === 100);
 
-## Introduction
+//    instructions: "Write a function, age, that takes a birth year and returns an age in years."
+//    example: "age(2000) should return 16"
+var age = function(birth) {
+};
+console.log('age success:', age(1971) === 45);
 
-Set variables "query1" through "query8" by using an underscore function to answer the specified question. When you are finished, check your browser's console log to test the results.
+//    instructions: "Write a function that returns true for numbers over 9000 and false otherwise"
+//    example: "over9000(22) should return false"
+var over9000 = function() {
+};
+console.log('over9000 success:', over9000(9001) === true && over9000(12) === false);
 
-For data, use the following two lists of board game collections.
-===================== */
+//    instructions: "Write a function that returns the value of an object at a specified key"
+//    example: "valueAtKey({'name': 'Nathan'}, 'name') should return 'Nathan'"
+var valueAtKey = function(){
+};
+console.log('valueAtKey success:', valueAtKey({'foo': 'bar'}, 'foo') === 'bar');
 
-var jeffGameList = ["chess", "monopoly", "sorry", "pandemic", "candyland"];
-console.log('Jeff\'s list', jeffGameList);
+//    instructions: "Write a function which returns the y coordinate of a line given m, x, and b"
+//    example: "y(0, 0, 0) should return 0; y(1, 1, 1) should return 2"
+var y = function() {
+};
+console.log('y success:', y(12, 1, 12) === 24);
 
-var nathanGameList = ["chess", "dice", "catan", "pandemic"];
-console.log('Nathan\'s list', nathanGameList);
-
-/* =====================
-What is the first game in Jeff's list?
-===================== */
-
-var query1;
-
-console.log('What is the first game in Jeff\'s list?', query1);
-
-/* =====================
-What are all of the games except for the first game in Jeff's list?
-===================== */
-
-var query2;
-
-console.log('What are all of the games except for the first game in Jeff\'s list?', query2);
-
-/* =====================
-What is the last game in Nathan's list?
-===================== */
-
-var query3;
-
-console.log('What is the last game in Nathan\'s list?', query3);
-
-/* =====================
-What are all of the games in Nathan's list except for the last?
-===================== */
-
-var query4;
-
-console.log('What are all of the games in Nathan\'s list except for the last?', query4);
-
-/* =====================
-What would Nathan's game list look like if he sold "catan"?
-===================== */
-
-var query5;
-
-console.log('What would Nathan\'s game list look like if he sold "catan"?', query5);
-
-/* =====================
-If Nathan and Jeff play a board game, what are their options? This should be a list of all games owned by Jeff or Nathan, with no duplicates.
-===================== */
-
-var query6;
-
-console.log('If Nathan and Jeff play a board game, what are their options? This should be a list of all games owned by Jeff or Nathan, with no duplicates.', query6);
-
-/* =====================
-Which games are owned by both Jeff and Nathan?
-===================== */
-
-var query7;
-
-console.log('Which games are owned by both Jeff and Nathan', query7);
-
-/* =====================
-Which games are exclusive to collections? In other words, only owned by either Jeff or Nathan.
-===================== */
-
-var query8;
-
-console.log('Which games are exclusive to collections? In other words, only owned by either Jeff or Nathan.', query8);
+//    instructions: "Write a function which counts the number of times a value occurs in an array "
+//    example: "countItem(['a', 'b', 'a'], 'a') should return 2"
+var countItem = function() {};
+console.log('countItem success:', countItem([1, 2, 3, 4, 5, 4, 4], 4) === 3);
