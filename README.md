@@ -9,13 +9,6 @@
 - JSHint installation
 - Opening Atom from GitHub Desktop
 
-### Live coding: refactoring code into functions
-- Step through the code and discuss
-- Imagine alternative code flows
-- Organize the code
-- Make code DRYer ('don't repeat yourself')
-    - Redundant code is a headache waiting to happen
-
 ### Functions continued
 
 ##### Section 1: Using functions
@@ -28,6 +21,13 @@
 - Thinking functionally
     - Everything in a program is data
     - Functions are data transformations
+
+### Live coding: refactoring code into functions
+- Step through the code and discuss
+- Imagine alternative code flows
+- Organize the code
+- Make code DRYer ('don't repeat yourself')
+    - Redundant code is a headache waiting to happen
 
 
 ### underscore.js
