@@ -1,0 +1,39 @@
+/*
+  Part 2: Functions as values
+
+  Functions can be passed as values to other functions. Each exercise here builds on that theme.
+*/
+
+//    instructions: write a function that *always* returns the number 1
+var justOne = function() {};
+console.log('justOne success:', justOne() === 1);
+
+//    instructions: Write a function that returns true if a number is even
+var isEven = function() {};
+console.log('isEven success:', isEven(2) === true && isEven(3) === false);
+
+//    instructions: Write a function that *always* returns false.
+//                  Use justOne and isEven somehow in the definition.
+var justFalse = function() {};
+console.log('justFalse success:', justFalse() === false);
+
+//    instructions: Write a function that takes a boolean value and returns its opposite
+var not = function() {};
+console.log('not success:', not(true) === false);
+
+//    instructions: Write a function that returns true if a number is odd
+//                  Use isEven and not somehow in the definition.
+var isOdd = function() {};
+console.log('isOdd success:', isOdd(4) === false);
+
+//    instructions: Write a function that takes a list of numbers and returns a list with
+//                  only numbers above 10
+var filterOutLessThan10 = function() {};
+console.log('filterOutLessThan10 success:', filterOutLessThan10([4, 11]) === [11]);
+
+//    Stretch goal — NOT required
+//    instructions: Let's bring it all together. Write a function that returns only odd numbers. It takes:
+//                  1. a list of numbers
+//                  2. a function that takes a number and returns true or false (isOdd, let's say)
+var filter = function(array, func) {};
+console.log('filter success:', filter([4, 11], isOdd) === [11]);
