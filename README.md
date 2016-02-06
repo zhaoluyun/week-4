@@ -4,58 +4,41 @@
 
 ## Class Outline
 
-### Week 2 Review & Introduction
+### Week 3 Review & Introduction
 - Homework/lab discussion
-- JSHint installation
+- GitHub Practice
 - Opening Atom from GitHub Desktop
 
-### Functions continued
+### Bringing everything together
 
-##### Section 1: Using functions
-- Writing functions
-    - Naming functions
-    - Providing arguments
-    - The function body
-    - The `return` statement
-    - Function values
-- Thinking functionally
-    - Everything in a program is data
-    - Functions are data transformations
+##### Section 1: GitHub: Features & Creating Repositories
+- GitHub feature review
+    - Pull Requests
+    - Commenting
+    - Issues
+    - Commit view
+- Discuss repo creation
+    - README.md
+    - license
+    - `.gitignore`
 - [Lab 1](lab/lab1/)
+    - Find group
 
-
-
-### Live coding: refactoring code into functions
-- Step through the code and discuss
-- Imagine alternative code flows
-- Organize the code
-- Make code DRYer ('don't repeat yourself')
-    - Redundant code is a headache waiting to happen
-
-
-### underscore.js
-
-##### Section 2: [Library](http://underscorejs.org/) overview
-- Selecting elements
-- Array utilities
-- `each`: No more `for` loops!<sup>*</sup>
+##### Section 2: Underscore Review & Intro to jQuery (ajax only)
+- Higher order functions
+    - Functions as recipes
+    - `_.each`, `_.map`, `_.filter`
+    - `_.reduce`
+- jQuery
+    - Library motivation
+    - Getting data from elsewhere
+    - Ajax
 - [Lab 2](lab/lab2/)
-
-<sup>*</sup>Mostly!
-
-
-### HTML & CSS Introduction
-
-##### HTML & CSS
-- Review our uses thus Far
-- What HTML does
-- What CSS does
-
-##### Developer tools (other than console)
-- Elements
-- Sources
+    - Overview and discussion
+    - Done in group
 
 ## Homework Assignment (Due: Sunday, February 7)
 - Complete [Code Academy HTML/CSS](https://www.codecademy.com/learn/web)
-- Complete [Week 3 Labs](lab) (Lab 2, Part 4 is an Optional Challenge)
-- Complete [Week 3 Assignment](assignment)
+- Complete [Week 4 Lab 2](lab/lab2) (Work with your partner to complete
+  lab 2)
+- Complete [Week 4 Assignment](assignment)
