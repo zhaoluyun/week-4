@@ -16,6 +16,10 @@ $('button#my-button').click(function(e) {
   numericField2 = $('#num2').val();
   booleanField = $('#boolean')[0].checked;
   stringField = $('#string').val();
+  console.log("numericField1", numericField1);
+  console.log("numericField2", numericField2);
+  console.log("booleanField", booleanField);
+  console.log("stringField", stringField);
 
 
   /* =====================
@@ -28,4 +32,3 @@ $('button#my-button').click(function(e) {
   ===================== */
   plotData();
 });
-
