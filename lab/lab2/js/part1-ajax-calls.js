@@ -47,10 +47,12 @@ console.log("fizzbuzz success:",
   underscore. Here's the ajax syntax:
   $.ajax(<URL GOES HERE>).done(<RECIPE GOES HERE>);
 
-  Your job is to write functions and ajax calls for each of the three provided
+  Your job is to write functions and ajax calls for one of the three provided
   URLs to pull down and then store data collected through AJAX in variables so
   that you can work with it. To test your success, prove that you can log the
   resulting data to your console.
+
+  You may choose whichever dataset you find most interesting.
 
   NOTE: Because the ajax call happens asynchronously (that is, outside the normal execution order),
         you'll need to call console.log *within* the function that grabs your data.
@@ -78,29 +80,22 @@ console.log("fizzbuzz success:",
         It will just log undefined to the console.
 
 ===================== */
-var url1 = "https://raw.githubusercontent.com/CPLN690-MUSA610/datasets/master/json/philadelphia-solar-installations.json";
-var url2 = "https://raw.githubusercontent.com/CPLN690-MUSA610/datasets/master/json/philadelphia-crime-snippet.json";
-var url3 = "https://raw.githubusercontent.com/CPLN690-MUSA610/datasets/master/json/philadelphia-bike-crashes-snippet.json";
+var phillySolarInstallationDataUrl = "https://raw.githubusercontent.com/CPLN690-MUSA610/datasets/master/json/philadelphia-solar-installations.json";
+var phillyCrimeDataUrl = "https://raw.githubusercontent.com/CPLN690-MUSA610/datasets/master/json/philadelphia-crime-snippet.json";
+var phillyBikeCrashesDataUrl = "https://raw.githubusercontent.com/CPLN690-MUSA610/datasets/master/json/philadelphia-bike-crashes-snippet.json";
 
 
 /* =====================
   Data you grab through ajax is just text. You'll need to parse it as javascript
-  objects to really work with it. Use the function JSON.parse on the strings you
-  stored for url1, url2, and url3 to parse your strings as javascript objects.
-  Store them on the following variables.
-===================== */
-var objects1;
-var objects2;
-var objects3;
+  objects to really work with it. Use the function JSON.parse on the string you
+  downloaded for the exercise above to parse your strings as javascript objects.
 
-console.log("JSON parsing success:",
-  typeof objects1 === 'object' && typeof objects2 === 'object' && typeof objects3 === 'object');
+  Remember to call all code within the function body. Use console.log to make sure
+  that this step is completed before moving on!
+===================== */
 
 
 /* =====================
-  Now that you've properly parsed your data, use _.each to plot one of the three
-  datasets you've pulled down.
+  Now that you've properly parsed your data, use _.each to plot the
+  dataset you've pulled down.
 ===================== */
-//_.each(objects1, function() {});
-//_.each(objects2, function() {});
-//_.each(objects3, function() {});
