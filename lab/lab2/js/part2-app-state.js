@@ -10,7 +10,17 @@
   any dataset from part1 and write a function here to download it, parse it,
   make it into markers, and plot it. You'll know you've succeeded when you can
   see markers on the map.
+
+  NOTE: These funcions are being called for you. Look to the bottom of this file
+        to see where and how the functions you are defining will be used. Remember
+        that function calls (e.g. func();) which are equal to a value (i.e. you
+        can set a var to it: var result = func();) must use the 'return' keyword.
+        var justOne = function() {
+          return 1;
+        }
+        var one = justOne();
 ===================== */
+
 var downloadData = $.ajax("");
 var parseData = function() {};
 var makeMarkers = function() {};
@@ -25,14 +35,20 @@ var plotMarkers = function() {};
   In real applications, this will typically happen in response to changes to the
   user's input.
 ===================== */
+
 var removeMarkers = function() {};
 
 /* =====================
   Optional, stretch goal
   Write the necessary code (however you can) to plot a filtered down version of
   the downloaded and parsed data.
-  HINT: your code should be called inside the function body defined below.
+
+  Note: You can add or remove from the code at the bottom of this file.
 ===================== */
+/* =====================
+ CODE EXECUTED DOWN HERE!
+===================== */
+
 downloadData.done(function(data) {
   var parsed = parseData(data);
   var markers = makeMarkers(parsed);
