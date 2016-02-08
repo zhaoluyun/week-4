@@ -10,14 +10,14 @@
 
   This recipe, given to underscore's _.filter will return only the elements we want.
 ===================== */
-var isLengthOfFiveOrMore = function(string) {};
+var isLengthOfFiveOrMore = function(str) {};
 
 console.log("isLengthOfFiveOrMore success:",
   _.isEqual(_.filter(['this', 'is','a', 'test', 'testing'], isLengthOfFiveOrMore), ['testing']));
 
 
 /* =====================
-  Now write a 'recipe' to console.log the double of a number. Use the
+  Now write a 'recipe' to console.log the double of a number (i.e. n * 2). Use the
   function you write along with underscore's _.each to log the double of every
   number in the provided array.
 ===================== */
@@ -33,7 +33,7 @@ var fizzbuzzArray = [];
 var fizzbuzzFunc = function(num) {
   var str = '';
   if (num % 3 === 0) { str = 'fizz'; }
-  if (num % 5 === 0) { str = 'buzz'; }
+  if (num % 5 === 0) { str += 'buzz'; }
   if (str === '') { str = num.toString(); }
   return str;
 };
@@ -51,6 +51,32 @@ console.log("fizzbuzz success:",
   URLs to pull down and then store data collected through AJAX in variables so
   that you can work with it. To test your success, prove that you can log the
   resulting data to your console.
+
+  NOTE: Because the ajax call happens asynchronously (that is, outside the normal execution order),
+        you'll need to call console.log *within* the function that grabs your data.
+        For example:
+
+        var computedValue;  // We want to store the value of a response on this variable
+
+        // ================================
+        // GOOD ===========================
+        // ================================
+        $.ajax(<URL>).done(function(ajaxResponseValue) {
+          // a function that does some kind of transformation on the response
+          var computedValue = doStuffHere(ajaxResponseValue);
+          // Logging our computed result (within the body of the ajax function)
+          console.log(computedValue);
+        });
+
+        // ================================
+        // BAD ============================
+        // ================================
+        console.log(computedValue);
+
+        The problem with logging here is that this will probably happen before that ajax call can
+        return with a response. this will print before it has anything stored on its var!
+        It will just log undefined to the console.
+
 ===================== */
 var url1 = "https://raw.githubusercontent.com/CPLN690-MUSA610/datasets/master/json/philadelphia-solar-installations.json";
 var url2 = "https://raw.githubusercontent.com/CPLN690-MUSA610/datasets/master/json/philadelphia-crime-snippet.json";
