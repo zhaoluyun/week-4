@@ -24,7 +24,7 @@
 ===================== */
 
 /* =====================
-  Define a resetMap function to remove markers from the map and clear our the array of markers
+  Define a resetMap function to remove markers from the map and clear the array of markers
 ===================== */
 var resetMap = function() {
   /* =====================
@@ -33,7 +33,9 @@ var resetMap = function() {
 };
 
 /* =====================
-  Define a getData function to grab our dataset through a jQuery.ajax call ($.ajax)
+  Define a getAndParseData function to grab our dataset through a jQuery.ajax call ($.ajax). It
+  will be called as soon as the application starts. Be sure to parse your data once you've pulled
+  it down!
 ===================== */
 var getAndParseData = function() {
   /* =====================
@@ -42,7 +44,8 @@ var getAndParseData = function() {
 };
 
 /* =====================
-  Call our plotData function. It should plot all the markers that meet our criteria
+  Call our plotData function. It should plot all the markers that meet our criteria (whatever that
+  criteria happens to be — that's entirely up to you)
 ===================== */
 var plotData = function() {
   /* =====================
