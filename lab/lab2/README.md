@@ -11,14 +11,14 @@ successful result to console.
 
 #### Part 2: Application state: storing and removing information
 
-In [part2-application-state.js](js/part2-app-state.js), you will be
+In [part2-app-state.js](js/part2-app-state.js), you will be
 tasked with writing a function  for removing markers from the map.
 This task will require that you keep track of the markers somehow:
 look to the bottom of the file
 
 #### Part 3: Full application with user input
 
-In [part3-full-application.js](js/part3-application.js), you will use
+In [part3-application.js](js/part3-application.js), you will use
 what you've learned thus far in the course to write a full application
 with working user input. The user input portion of the task is handled
 for you — all you need to do is define the appropriate functions which
