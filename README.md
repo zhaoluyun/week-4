@@ -1,4 +1,4 @@
-# Week 3
+# Week 4
 
 *As always: make a copy of this repository to commit changes to*
 
@@ -24,7 +24,8 @@
 - [Lab 1](lab/lab1/)
     - Find group
 
-##### Section 2: Underscore Review & Intro to jQuery (ajax only)
+##### Section 2: Underscore Review & Intro to
+[jQuery](http://jquery.com/) (ajax only)
 - Higher order functions
     - Functions as recipes
     - `_.each`, `_.map`, `_.filter`
@@ -32,7 +33,7 @@
 - jQuery
     - Library motivation
     - Getting data from elsewhere
-    - Ajax
+    - [ajax](http://api.jquery.com/category/ajax/)
 - [Lab 2](lab/lab2/)
     - Overview and discussion
     - Done in group
