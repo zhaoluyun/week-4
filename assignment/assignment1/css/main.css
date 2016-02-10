@@ -25,3 +25,48 @@ body {
     overflow-y: auto;
     padding: 20px;
 }
+
+.element {
+  background-color: #F5F5F5;
+  padding: 10px 5px 10px 5px;
+  display:block;
+  margin-top:5px;
+}
+
+div div p:first-child {
+  font-size: 20px;
+}
+
+div div p:nth-child(2) {
+  color:grey;
+  font-size: 20px
+}
+
+div div p:nth-child(3) {
+  font-size: 16px
+}
+
+
+div div p:nth-child(4) {
+  font-size: 16px
+}
+
+.by {
+  font-size: 20px
+}
+
+#line {
+  border: 1px solid black
+}
+
+#byname {
+  border: 1px solid grey;
+  padding-top: 30px
+}
+
+#hide {
+  border: 1px solid grey;
+  padding: 2px 5px 2px 5px;
+  background-color: #F5F5F5;
+  float:right;
+}

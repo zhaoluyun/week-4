@@ -27,9 +27,10 @@
   Define a resetMap function to remove markers from the map and clear the array of markers
 ===================== */
 var resetMap = function() {
-  /* =====================
-    Fill out this function definition
-  ===================== */
+  _.each(myMarkers, function(value){
+    map.removeLayer(value);
+  });
+          myMarkers = [];
 };
 
 /* =====================
@@ -37,10 +38,14 @@ var resetMap = function() {
   will be called as soon as the application starts. Be sure to parse your data once you've pulled
   it down!
 ===================== */
+var data = [];
 var getAndParseData = function() {
-  /* =====================
-    Fill out this function definition
-  ===================== */
+  $.ajax("https://raw.githubusercontent.com/CPLN690-MUSA610/datasets/master/json/philadelphia-solar-installations.json").done(function(value) {
+    var parsed = JSON.parse(value);
+    _.map(parsed, function(value){
+      data.push(value);
+    });
+  });
 };
 
 /* =====================
@@ -48,7 +53,24 @@ var getAndParseData = function() {
   criteria happens to be — that's entirely up to you)
 ===================== */
 var plotData = function() {
-  /* =====================
-    Fill out this function definition
-  ===================== */
+  var makeMarkers = function(parsed) {
+    var filtered = _.filter(parsed,function(value){
+      return((value.YEARBUILT<numericField2  && value.YEARBUILT>numericField1)|| value.DEVELOPER === stringField || booleanField===true);
+    });
+
+    var mark = _.map(filtered, function(value){
+    return L.marker([value.LAT,value.LONG_]);
+    });
+    Mymarkers = mark;
+  };
+
+  var plotMarkers = function(mark) {
+    _.each(mark, function(value){
+      value.addTo(map);
+    });
+  };
+
+    var markers = makeMarkers(data);
+    plotMarkers(Mymarkers);
+
 };
